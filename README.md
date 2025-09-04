@@ -1,4 +1,3 @@
-# friends-favorites-sql-project
 
 # Friends & Their Favorites 🎶🍕✈️
 
