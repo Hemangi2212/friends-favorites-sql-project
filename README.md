@@ -39,3 +39,16 @@ The project is divided into two main tables:
 - **Filtering with WHERE conditions**
 
 ---
+
+## 🔍 Example Queries
+
+### 1. View all users with their favorite food & place
+```sql
+SELECT name, fav_place, fav_food FROM favs;
+
+### 2. Find names of users who like Pop songs
+SELECT DISTINCT f.name
+FROM favs f
+JOIN fav_songs s ON f.user_id = s.user_id
+WHERE s.genre = 'Pop';
+
